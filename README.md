@@ -22,7 +22,7 @@ ConLL2003 [https://huggingface.co/datasets/conll2003]
 ```
 
 # Train model
-[Colab Note book](https://colab.research.google.com/drive/1OWZ5l0hQOoPbjsP4zCO0ix5yOxIEY4vr)
+[Colab Notebook](https://colab.research.google.com/drive/1OWZ5l0hQOoPbjsP4zCO0ix5yOxIEY4vr)
 ```
 Bertner.ipynb
 ```
