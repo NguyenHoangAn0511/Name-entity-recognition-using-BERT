@@ -1,12 +1,15 @@
 # Name entity recognition using BERT
 
-Requirements:
+## Requirements:
 - Streamlit
 - Pytorch
 - GPU
 - Transformer
-Dataset:
+
+## Dataset:
 ConLL2003 [https://huggingface.co/datasets/conll2003]
+
+```
 @inproceedings{tjong-kim-sang-de-meulder-2003-introduction,
     title = "Introduction to the {C}o{NLL}-2003 Shared Task: Language-Independent Named Entity Recognition",
     author = "Tjong Kim Sang, Erik F.  and
@@ -16,3 +19,9 @@ ConLL2003 [https://huggingface.co/datasets/conll2003]
     url = "https://www.aclweb.org/anthology/W03-0419",
     pages = "142--147",
 }
+```
+
+# Train
+```
+Bertner.inpy
+```
