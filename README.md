@@ -28,6 +28,36 @@ Bertner.ipynb
 ```
 
 ## Evaluate
-
+Model accuracy: 0.98
 
 ## Test model
+```
+from transformers import pipeline, AutoModelForTokenClassification, AutoTokenizer
+
+model = AutoModelForTokenClassification.from_pretrained("path/to/model/folder")
+tokenizer = AutoTokenizer.from_pretrained("path/to/model/folder")
+
+ner_model = pipeline('ner', model=model, tokenizer=tokenizer)
+sequence = "England is a country that is part of the United Kingdom"
+ner_model(sequence)
+```
+```
+[{'end': 7,
+  'entity': 'B-LOC',
+  'index': 1,
+  'score': 0.9998566,
+  'start': 0,
+  'word': 'England'},
+ {'end': 47,
+  'entity': 'B-LOC',
+  'index': 10,
+  'score': 0.99983966,
+  'start': 41,
+  'word': 'United'},
+ {'end': 55,
+  'entity': 'I-LOC',
+  'index': 11,
+  'score': 0.99957854,
+  'start': 48,
+  'word': 'Kingdom'}]
+```
