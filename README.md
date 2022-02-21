@@ -20,6 +20,10 @@ ConLL2003 [https://huggingface.co/datasets/conll2003]
     pages = "142--147",
 }
 ```
+## Demo
+```
+streamlit run app.py
+```
 
 # Train model
 [Colab Notebook](https://colab.research.google.com/drive/1OWZ5l0hQOoPbjsP4zCO0ix5yOxIEY4vr)
